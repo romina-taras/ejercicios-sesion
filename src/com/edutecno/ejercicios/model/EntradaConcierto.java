@@ -8,6 +8,15 @@ public class EntradaConcierto {
 	private String nombreArtista;
 	private String ubicacion;
 	private Date fechaConcierto;
+	private int valor;
+
+	public int getValor() {
+		return valor;
+	}
+
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
 
 	public String getTitularEntrada() {
 		return titularEntrada;

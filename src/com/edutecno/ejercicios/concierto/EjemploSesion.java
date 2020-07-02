@@ -28,7 +28,7 @@ public class EjemploSesion extends HttpServlet {
 		entrada.setFechaConcierto(new Date());
 		entrada.setUbicacion("Cancha");
 		entrada.setTitularEntrada(usuario);
-		entrada.setPrecio(precio);
+		entrada.setPrecio(150000);
 		entrada.setCorreo(correo);
 		entrada.setNombreConcierto("Coronavirus");
 		entrada.setValor(10000);

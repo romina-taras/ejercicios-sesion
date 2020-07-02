@@ -30,8 +30,10 @@ public class EjemploSesion extends HttpServlet {
 		entrada.setTitularEntrada(usuario);
 		entrada.setPrecio(precio);
 		entrada.setCorreo(correo);
+		entrada.setNombreConcierto("Coronavirus");
 		sesion.setAttribute("datosCompra", entrada);
 		writer.println("<html><body>");
+		writer.println("<h1>Entradas para  Concierto " + entrada.getNombreConcierto() + "</h1>");
 		writer.println("<h1>Entradas para " + entrada.getNombreArtista() + "</h1>");
 		writer.println("<h1>A nombre de " + entrada.getTitularEntrada() + "</h1>");
 		writer.println("</body></html>");

@@ -10,6 +10,7 @@ public class EntradaConcierto {
 	private Date fechaConcierto;
 	private String correo;
 	private double precio;
+	private String nombreConcierto;
 	
 	public String getCorreo() {
 		return correo;
@@ -26,6 +27,7 @@ public class EntradaConcierto {
 	public double getPrecio() {
 		return precio;
 	}
+
 
 	public String getTitularEntrada() {
 		return titularEntrada;
@@ -57,5 +59,13 @@ public class EntradaConcierto {
 
 	public void setFechaConcierto(Date fechaConcierto) {
 		this.fechaConcierto = fechaConcierto;
+	}
+	
+	public String getNombreConcierto() {
+		return nombreConcierto;
+	}
+
+	public void setNombreConcierto(String nombreConcierto) {
+		this.nombreConcierto = nombreConcierto;
 	}
 }

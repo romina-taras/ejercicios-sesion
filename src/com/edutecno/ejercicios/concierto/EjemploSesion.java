@@ -19,13 +19,17 @@ public class EjemploSesion extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String usuario = request.getParameter("nombre");
+		String correo = request.getParameter ("correo");
 		EntradaConcierto entrada = new EntradaConcierto();
 		HttpSession sesion = request.getSession(true);
 		PrintWriter writer = response.getWriter();
 		entrada.setNombreArtista("Iron Maiden");
+		entrada.setPrecio(24500.0);
 		entrada.setFechaConcierto(new Date());
 		entrada.setUbicacion("Cancha");
 		entrada.setTitularEntrada(usuario);
+		entrada.setPrecio(precio);
+		entrada.setCorreo(correo);
 		entrada.setNombreConcierto("Coronavirus");
 		entrada.setValor(10000);
 		sesion.setAttribute("datosCompra", entrada);

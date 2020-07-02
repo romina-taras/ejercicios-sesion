@@ -8,16 +8,27 @@ public class EntradaConcierto {
 	private String nombreArtista;
 	private String ubicacion;
 	private Date fechaConcierto;
-	private int valor;
+	private String correo;
+	private double precio;
 
-	public int getValor() {
-		return valor;
-	}
-
-	public void setValor(int valor) {
-		this.valor = valor;
-	}
 	private String nombreConcierto;
+	
+	public String getCorreo() {
+		return correo;
+	}
+	
+	public void String setCorreo(String correo) {
+		this.correo = correo;
+	}
+	
+	public void double setPrecio(precio) {
+		this.precio = precio;
+	}
+	
+	public double getPrecio() {
+		return precio;
+	}
+
 
 	public String getTitularEntrada() {
 		return titularEntrada;

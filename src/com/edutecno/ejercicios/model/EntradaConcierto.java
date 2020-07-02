@@ -8,6 +8,7 @@ public class EntradaConcierto {
 	private String nombreArtista;
 	private String ubicacion;
 	private Date fechaConcierto;
+	private String nombreConcierto;
 
 	public String getTitularEntrada() {
 		return titularEntrada;
@@ -39,5 +40,13 @@ public class EntradaConcierto {
 
 	public void setFechaConcierto(Date fechaConcierto) {
 		this.fechaConcierto = fechaConcierto;
+	}
+	
+	public String getNombreConcierto() {
+		return nombreConcierto;
+	}
+
+	public void setNombreConcierto(String nombreConcierto) {
+		this.nombreConcierto = nombreConcierto;
 	}
 }

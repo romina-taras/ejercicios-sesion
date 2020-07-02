@@ -1,4 +1,4 @@
-package com.edutecno.ejercicios;
+package com.edutecno.ejercicios.concierto;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.edutecno.ejercicios.model.EntradaConcierto;
+import com.edutecno.ejercicios.concierto.model.EntradaConcierto;
 
 @WebServlet("/obtieneSesion")
 public class ObtieneSesion extends HttpServlet {

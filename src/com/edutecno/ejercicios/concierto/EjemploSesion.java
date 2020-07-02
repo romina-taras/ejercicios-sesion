@@ -1,4 +1,4 @@
-package com.edutecno.ejercicios;
+package com.edutecno.ejercicios.concierto;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.edutecno.ejercicios.model.EntradaConcierto;
+import com.edutecno.ejercicios.concierto.model.EntradaConcierto;
 
 @WebServlet("/creaSesion")
 public class EjemploSesion extends HttpServlet {
@@ -29,7 +29,7 @@ public class EjemploSesion extends HttpServlet {
 		entrada.setFechaConcierto(new Date());
 		entrada.setUbicacion("Cancha");
 		entrada.setTitularEntrada(usuario);
-		entrada.setPrecio(precio);
+		entrada.setPrecio(150000);
 		entrada.setCorreo(correo);
 		entrada.setNombreConcierto("Coronavirus");
 		entrada.setValor(10000);

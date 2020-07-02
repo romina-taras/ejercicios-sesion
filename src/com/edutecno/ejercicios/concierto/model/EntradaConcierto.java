@@ -1,4 +1,4 @@
-package com.edutecno.ejercicios.model;
+package com.edutecno.ejercicios.concierto.model;
 
 import java.util.Date;
 
@@ -11,18 +11,18 @@ public class EntradaConcierto {
 	private String correo;
 	private double precio;
 	private String nroAsiento;
-
+    private int valor;
 	private String nombreConcierto;
 	
 	public String getCorreo() {
 		return correo;
 	}
 	
-	public void String setCorreo(String correo) {
+	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
 	
-	public void double setPrecio(precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 	
@@ -77,5 +77,13 @@ public class EntradaConcierto {
 	
 	public void setNroAsiento(String nroAsiento) {
 		this.nroAsiento = nroAsiento;
+	}
+
+	public int getValor() {
+		return valor;
+	}
+
+	public void setValor(int valor) {
+		this.valor = valor;
 	}
 }

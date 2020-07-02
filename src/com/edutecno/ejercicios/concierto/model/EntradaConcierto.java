@@ -1,4 +1,4 @@
-package com.edutecno.ejercicios.model;
+package com.edutecno.ejercicios.concierto.model;
 
 import java.util.Date;
 

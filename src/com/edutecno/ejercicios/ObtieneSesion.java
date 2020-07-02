@@ -21,6 +21,7 @@ public class ObtieneSesion extends HttpServlet {
 		writer.println("<h1>Entradas para " + entradas.getNombreArtista() + "</h1>");
 		writer.println("<h1>A nombre de " + entradas.getTitularEntrada() + "</h1>");
 		writer.println("<h3>Valor $" + entradas.getValor() + "</h3>");
+		writer.println("<h2>Nro Asiento : " + entradas.getNroAsiento() + "</h2>");
 		writer.println("</body></html>");
 	}
 }

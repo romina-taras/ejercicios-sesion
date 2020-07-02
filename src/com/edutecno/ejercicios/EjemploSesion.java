@@ -27,6 +27,7 @@ public class EjemploSesion extends HttpServlet {
 		entrada.setUbicacion("Cancha");
 		entrada.setTitularEntrada(usuario);
 		entrada.setNombreConcierto("Coronavirus");
+		entrada.setValor(10000);
 		sesion.setAttribute("datosCompra", entrada);
 		writer.println("<html><body>");
 		writer.println("<h1>Entradas para  Concierto " + entrada.getNombreConcierto() + "</h1>");
